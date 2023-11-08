@@ -1,0 +1,44 @@
+:root
+{
+  --colora: #0D1321;
+  --colorb: #1D2D44;
+  --colorc: #3E5C76;
+  --colord: #748CAB;
+  --colore: #F0EBD8;
+}
+
+body
+{
+  background-color: var(--colora);
+}
+
+.c-main
+{
+  background-color: var(--colord);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  margin: 2rem 5rem;
+}
+
+.c-title
+{
+  background-color: var(--colorc);
+  color: var(--colore);
+}
+
+.c-input
+{
+  margin: 2rem 0;
+
+}
+
+.c-graph
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,29 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body> 
-  <h1>Graph Example</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="c-main">
+      <div class="c-title">
+        <h1>Graph Euler Resolver</h1>
+      </div>
 
-  <label for="vertexInput">Vertex:</label>
-  <input type="text" id="vertexInput" placeholder="Enter a vertex">
+      <div class="c-input">
+        <label for="vertexInput">Vertex:</label>
+        <input type="text" id="vertexInput" placeholder="Enter a vertex" />
 
-  <label for="edgesInput">Edges (comma-separated):</label>
-  <input type="text" id="edgesInput" placeholder="Enter edges">
+        <label for="edgesInput">Edges (comma-separated):</label>
+        <input type="text" id="edgesInput" placeholder="Enter edges" />
+      </div>
 
-  <button id="addVertexBtn">Add Vertex</button>
-  <button id="mkBtn">Create Graph (MK)</button>
+      <div class="c-btn">
+        <button id="addVertexBtn">Add Vertex</button>
+        <button id="mkBtn">Create Graph (MK)</button>
+        <button id="clearGraphBtn">Clear</button>
+      </div>
 
-  <div id="graph">
-    <h2>Graph Information</h2>
-    <pre id="graphContent"></pre>
-    <pre id="graphInfo"></pre>
-    <button id="loadBtn">Load</button>
-  </div>
+      <div id="graph" class="c-graph">
+        <h2>Graph Information</h2>
+        <table id="graphContent">
+          <thead>
+            <th>Vertex</th>
+            <th>Edges</th>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <pre id="graphInfo"></pre>
+        <button id="loadBtn">Load</button>
+      </div>
+    </div>
 
-  <script src="main.js"></script>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
