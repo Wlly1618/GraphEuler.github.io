@@ -186,7 +186,7 @@ class Graph
 
   showGraph() {
     const table = document.getElementById("graphContent");
-    const tbody = table.querySelector('tbody'); // Accede al cuerpo de la tabla
+    const tbody = table.querySelector('tbody');
   
     while(tbody.firstChild) tbody.removeChild(tbody.firstChild);
   
@@ -262,10 +262,12 @@ document.getElementById("loadBtn").addEventListener("click", () =>
 });
 
 function clearGraph() {
-  const graphContent = document.getElementById('graphContent');
   const graphInfo = document.getElementById('graphInfo');
-  graphContent.textContent = '';
   graphInfo.textContent = '';
+  const table = document.getElementById("graphContent");
+  const tbody = table.querySelector('tbody');
+  
+  while(tbody.firstChild) tbody.removeChild(tbody.firstChild);
 }
 
 function clearGraphObject() {

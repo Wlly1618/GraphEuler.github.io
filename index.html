@@ -12,17 +12,23 @@
         <h1>Graph Euler Resolver</h1>
       </div>
 
-      <div class="c-input">
-        <label for="vertexInput">Vertex:</label>
-        <input type="text" id="vertexInput" placeholder="Enter a vertex" />
+      <div class="inputs">
+        <div class="c-input">
+          <input type="text" id="vertexInput" required="required">
+          <span>Vertex</span>
+        </div>
 
-        <label for="edgesInput">Edges (comma-separated):</label>
-        <input type="text" id="edgesInput" placeholder="Enter edges" />
+        <div class="c-input">
+          <input type="text" id="edgesInput" required="required">
+          <span>Edges</span>
+        </div>
       </div>
 
       <div class="c-btn">
         <button id="addVertexBtn">Add Vertex</button>
-        <button id="mkBtn">Create Graph (MK)</button>
+        <button id="mkBtn">Create Graph</button>
+      </div>
+      <div class="c-btn">
         <button id="clearGraphBtn">Clear</button>
       </div>
 
